@@ -4,11 +4,15 @@ import cookieParser from 'cookie-parser';
 import { connectDB } from './db/connectDB.js';
 import router from './router/user.route.js';
 import satelliteRouter from './router/satellite.route.js';
-
+import cors from 'cors';
 dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
+app.use(cors({
+  origin: 'http://localhost:5173', // Replace with your frontend URL
+  credentials: true // If you're using cookies or auth headers
+}));
 const PORT = process.env.PORT || 3000;
 app.get('/', (req, res) => {
     res.send('Welcome to the Satellite launch tracker API!');
