@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  color: white; /* text-white */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* shadow-md */
+
+  /* bg-gradient-to-r from-indigo-900 via-blue-900 to-black */
+  background: linear-gradient(to right, #312e81, #1e3a8a, #000);
+}

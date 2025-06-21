@@ -53,30 +53,30 @@ const Sidebar = () => {
 
         {/* Upcoming */}
         <li
-          onClick={() => navigate('/upcomming')}
+          onClick={() => navigate('/create')}
           className="relative group flex items-center hover:bg-gray-800 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300"
         >
           <span>🚀</span>
           {isOpen ? (
-            <span className="ml-3">Upcoming Launches</span>
+            <span className="ml-3">Create Launch</span>
           ) : (
             <span className="absolute left-full ml-2 px-2 py-1 text-sm bg-black text-white rounded shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 whitespace-nowrap">
-              Upcoming Launches
+            Create Launch
             </span>
           )}
         </li>
 
         {/* Past */}
         <li
-          onClick={() => navigate('/past')}
+          onClick={() => navigate('/launch-data')}
           className="relative group flex items-center hover:bg-gray-800 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300"
         >
           <span>📅</span>
           {isOpen ? (
-            <span className="ml-3">Past Launches</span>
+            <span className="ml-3">Launche Data</span>
           ) : (
             <span className="absolute left-full ml-2 px-2 py-1 text-sm bg-black text-white rounded shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 whitespace-nowrap">
-              Past Launches
+            Launch Data
             </span>
           )}
         </li>
