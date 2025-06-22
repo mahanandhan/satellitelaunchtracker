@@ -26,7 +26,7 @@ const Graphs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/satellite/posts/${id}`, { withCredentials: true });
+        const res = await axios.get(`https://satellitelaunchtracker-1.onrender.com/api/satellite/posts/${id}`, { withCredentials: true });
         const sat = res.data.post;
         if (!sat) return;
 

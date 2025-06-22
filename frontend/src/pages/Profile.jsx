@@ -9,7 +9,7 @@ const Profile = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/user/me', {
+        const response = await axios.get('https://satellitelaunchtracker-1.onrender.com/api/user/me', {
           withCredentials: true, // ✅ If using cookies for auth
         });
 

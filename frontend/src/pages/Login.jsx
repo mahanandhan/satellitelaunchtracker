@@ -9,7 +9,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault(); // Prevent default form reload
     try {
-      const response = await axios.post('http://localhost:3000/api/user/login', {
+      const response = await axios.post('https://satellitelaunchtracker-1.onrender.com/api/user/login', {
         email,
         password
       }, { withCredentials: true });
