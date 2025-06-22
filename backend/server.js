@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://satellitelaunchtracker.vercel.app'], // Replace with your frontend URL
+  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://satellitelaunchtracker.vercel.app', 'satellitelaunchtracker-anqv.vercel.app'], // Replace with your frontend URL
   credentials: true // If you're using cookies or auth headers
 }));
 const PORT = process.env.PORT || 3000;
