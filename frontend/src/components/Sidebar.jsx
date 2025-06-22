@@ -4,7 +4,20 @@ import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-
+  const handleLogout = async () => {
+    try {
+      const response = await axios.delete('https://satellitelaunchtracker-1.onrender.com/api/satellite/logout', { withCredentials: true });
+      if (response.status === 200) {
+        alert("Logged out successfully");
+        navigate('/login');
+      } else {
+        alert("Failed to log out. Please try again later.");
+      }
+    } catch (error) {
+      console.error("Logout failed:", error);
+      alert("Failed to log out. Please try again later.");
+    }
+  }
   return (
     <div
       className={`h-screen bg-gradient-to-b from-indigo-900 via-blue-900 to-black text-white shadow-md transition-all duration-300 ${
@@ -112,7 +125,7 @@ const Sidebar = () => {
 
         {/* Logout */}
         <li
-          onClick={() => alert('Logging out...')}
+          onClick={() => handleLogout}
           className="relative group flex items-center hover:bg-gray-800 px-3 py-2 rounded-lg cursor-pointer text-red-400 transition-all duration-300"
         >
           <span>🚪</span>
