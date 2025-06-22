@@ -13,7 +13,7 @@ const Signup = () => {
         username,
         email,
         password,
-      });
+      }, { withCredentials: true });
 
       if (response.status === 201) {
         alert('Signup successful! You can now login.');
