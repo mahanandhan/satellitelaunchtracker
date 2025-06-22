@@ -4,7 +4,7 @@ import { protectRoute } from '../middleware/protectRoute.js';
 
 const router = express.Router();
 
-router.post('/create',protectRoute, createPost);
+router.post('/create', createPost);
 router.get('/posts', getPosts);
 router.delete('/posts/:id', deletePost);
 router.get('/posts/:id',protectRoute, postId); // This seems to be a duplicate, consider removing it
