@@ -125,7 +125,7 @@ const Sidebar = () => {
 
         {/* Logout */}
         <li
-          onClick={() => handleLogout}
+          onClick={handleLogout}
           className="relative group flex items-center hover:bg-gray-800 px-3 py-2 rounded-lg cursor-pointer text-red-400 transition-all duration-300"
         >
           <span>🚪</span>
