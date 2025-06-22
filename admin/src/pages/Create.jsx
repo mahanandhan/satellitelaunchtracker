@@ -12,7 +12,7 @@ const Create = () => {
     e.preventDefault(); // prevent reload
 
     try {
-      const response = await axios.post('http://localhost:3000/api/satellite/create', {
+      const response = await axios.post('https://satellitelaunchtracker-1.onrender.com/api/satellite/create', {
         name,
         description,
         creater,

@@ -25,7 +25,7 @@ const LaunchData = () => {
 
 const handleDelete = async (id) => {
   try {
-    const response = await axios.delete(`http://localhost:3000/api/satellite/posts/${id}`, { withCredentials: true });
+    const response = await axios.delete(`https://satellitelaunchtracker-1.onrender.com/api/satellite/posts/${id}`, { withCredentials: true });
     if (response.status === 200) {
       setData(data.filter(item => item._id !== id));
       alert('🚀 Launch deleted successfully!');
