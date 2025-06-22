@@ -9,7 +9,7 @@ const Success = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/satellite/posts');
+        const response = await axios.get('https://satellitelaunchtracker-1.onrender.com/api/satellite/posts');
         if (response.status === 200) {
           setData(response.data.posts);
         }
