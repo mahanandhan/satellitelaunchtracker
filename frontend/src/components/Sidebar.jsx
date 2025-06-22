@@ -9,7 +9,7 @@ const Sidebar = () => {
       const response = await axios.post('https://satellitelaunchtracker-1.onrender.com/api/user/logout');
       if (response.status === 200) {
         alert("Logged out successfully");
-        navigate('/login');
+        navigate('/');
       } else {
         alert("Failed to log out. Please try again later.");
       }
