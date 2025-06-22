@@ -11,6 +11,7 @@ import About from './pages/About'
 import Navbar from './components/Navbar'
 import Settings from './pages/Settings'
 import Profile from './pages/Profile'
+import Success from './pages/Success'
 const App = () => {
   return (
     <div className='min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white overflow-none scrollbar-hidden'>
@@ -25,6 +26,8 @@ const App = () => {
         <Route path='/about' element={<About />} />
         <Route path='/settings' element={<Settings />} />
         <Route path='/profile' element={<Profile />} />
+        <Route path='/success' element={<Success />} />
+        <Route path="/graphs/:id" element={<Graphs />} />
       </Routes>
     </div>
   )

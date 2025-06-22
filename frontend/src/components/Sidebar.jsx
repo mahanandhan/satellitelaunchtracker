@@ -65,6 +65,20 @@ const Sidebar = () => {
             </span>
           )}
         </li>
+        {/* Success */}
+        <li
+          onClick={() => navigate('/success')}
+          className="relative group flex items-center hover:bg-gray-800 px-3 py-2 rounded-lg cursor-pointer transition-all duration-300"
+        >
+          <span>✅</span>
+          {isOpen ? (
+            <span className="ml-3">Success Launches</span>
+          ) : (
+            <span className="absolute left-full ml-2 px-2 py-1 text-sm bg-black text-white rounded shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 whitespace-nowrap">
+              Success Launches
+            </span>
+          )}
+        </li>
 
         {/* Past */}
         <li
@@ -73,10 +87,10 @@ const Sidebar = () => {
         >
           <span>📅</span>
           {isOpen ? (
-            <span className="ml-3">Past Launches</span>
+            <span className="ml-3">Falied Launches</span>
           ) : (
             <span className="absolute left-full ml-2 px-2 py-1 text-sm bg-black text-white rounded shadow-md opacity-0 group-hover:opacity-100 transition-all duration-300 z-10 whitespace-nowrap">
-              Past Launches
+              Failed Launches
             </span>
           )}
         </li>

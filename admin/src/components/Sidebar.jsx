@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-
   return (
     <div
       className={`h-screen bg-gradient-to-b from-indigo-900 via-blue-900 to-black text-white shadow-md transition-all duration-300 ${

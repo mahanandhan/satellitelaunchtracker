@@ -45,3 +45,16 @@ export const deletePost = async (req, res) => {
     }
 }
 
+export const postId = async (req, res) => {
+    try {
+        const id = req.params.id;
+        const post = await Satellite.findById(id);
+        if(!post) {
+            return res.status(404).json({ message: 'Post not found' });
+        }
+        res.status(200).json({ message: 'Post found successfully', post });
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+}
