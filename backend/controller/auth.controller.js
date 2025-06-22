@@ -58,7 +58,7 @@ export const logout = async (req, res) => {
             sameSite: 'None',
             maxAge: 0,
         })
-        res.status(200).json({ message: 'User logged out successfully' });
+        res.status(200).json({ message: 'User logged out successfully completed' });
     } catch (error) {
         console.log(error)
         res.status(500).json({ message: 'Internal server error' });
