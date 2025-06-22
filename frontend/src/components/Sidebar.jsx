@@ -6,7 +6,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const handleLogout = async () => {
     try {
-      const response = await axios.post('https://satellitelaunchtracker-1.onrender.com/api/auth/logout', { withCredentials: true });
+      const response = await axios.post('https://satellitelaunchtracker-1.onrender.com/api/auth/logout');
       if (response.status === 200) {
         alert("Logged out successfully");
         navigate('/login');
