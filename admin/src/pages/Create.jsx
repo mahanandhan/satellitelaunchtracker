@@ -18,7 +18,7 @@ const Create = () => {
         creater,
         status,
         sendTo
-      }, {withCredentials: true});
+      });
 
       if (response.status === 201) {
         alert('🚀 Launch created successfully!');
