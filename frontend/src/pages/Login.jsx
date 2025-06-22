@@ -28,7 +28,7 @@ const Login = () => {
   return (
     <div
       className="h-screen w-full flex justify-center items-center bg-cover bg-center bg-no-repeat overflow-hidden bg-transparent"
-      style={{ backgroundImage: `url(./src/assets/bgisropro.png)` }}
+      style={{ backgroundImage: `url(/bgisropro.png)` }}
     >
       <div className="flex flex-col gap-6 border border-white p-8 rounded-2xl bg-gray-800 shadow-2xl">
         <h1 className="text-2xl flex justify-center font-bold text-white">Login</h1>
