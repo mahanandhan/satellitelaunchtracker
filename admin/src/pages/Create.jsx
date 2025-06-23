@@ -5,7 +5,7 @@ const Create = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [creater, setCreater] = useState('');
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState('Shulded');
   const [sendTo, setSendTo] = useState('');
 
   const handleSubmit = async (e) => {
@@ -25,7 +25,7 @@ const Create = () => {
         setName('');
         setDescription('');
         setCreater('');
-        setStatus('upcoming');
+        setStatus('Shulded');
         setSendTo('');
       } else {
         alert('❌ Failed to create launch. Please try again.');
