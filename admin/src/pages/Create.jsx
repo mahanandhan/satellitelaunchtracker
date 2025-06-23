@@ -5,7 +5,7 @@ const Create = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [creater, setCreater] = useState('');
-  const [status, setStatus] = useState('shulded');
+  const [status, setStatus] = useState('');
   const [sendTo, setSendTo] = useState('');
 
   const handleSubmit = async (e) => {
@@ -104,7 +104,7 @@ const Create = () => {
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
             >
               <option value="shulded">Shulded</option>
-              <option value="shulded">Success</option>
+              <option value="success">Success</option>
               <option value="failed">Failed</option>
             </select>
           </div>
